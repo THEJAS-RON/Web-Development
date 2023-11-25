@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 200px;
+            height: 500px;
+            margin: auto;
+        }
+        div h1{
+            font-size: 30px;
+            position: relative;
+            animation-name: new-ani;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            top: -326px;
+            left: -151px;
+        }
+        @keyframes new-ani {
+            0%{
+                top: -326px;
+                left: -151px;
+            }
+            25%{
+                top: -326px;
+                left: 151px;
+            }
+            50%{
+                top: 0px;
+                left: 151px;
+            }
+            75%{
+                top: 0px;
+                left: -151px;
+            }
+            100%{
+                top: -326px;
+                left: -151px;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Welcome</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus non iure quas beatae earum magni sunt commodi
+            quisquam, vero saepe! Veniam perspiciatis, consequatur, ducimus reprehenderit vitae quibusdam, aliquam
+            obcaecati eos iure ipsum aperiam dolorem voluptas sint fugiat doloremque alias. At.
+        </p>
+        <h1>*</h1>
+    </div>
+</body>
+
+</html>
